@@ -1,0 +1,78 @@
+<!-- 
+    Date: 10.12.2017
+    Author: Marcin Szczodry
+    Version number: 1.0
+    Comments: To deliver the assignments as one one file I had to include images as Base64 code. For showcase purposes I seperated CSS and JS.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTEC Grades</title>
+    <script type="text/javascript" src="units.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <svg width="108px" height="54px" viewBox="0 0 108 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>Group@2x</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="VET-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1402.000000, -710.000000)">
+                    <g id="Group-17" transform="translate(1358.000000, 664.000000)">
+                        <g id="Group-16">
+                            <g id="Group-7-Copy">
+                                <g id="Group-8-Copy">
+                                    <g id="Group-4-Copy">
+                                        <g id="Group" transform="translate(42.000000, 42.000000)">
+                                            <image id="Bitmap" x="0" y="0" width="112" height="42" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABLCAYAAAA1fMjoAAAAAXNSR0IArs4c6QAAEdhJREFUeAHtXQXM7TQU7oWHuzs8nODubg93t4e7OwSH4G7B3Z0gITgEdw0a3N0dyveV2/sm7Xa23V35aZNlW9udnn5du/ZIp1QIAYGAQEAgIBAQCAgEBAICAYGAQEAgIBAQCAgEBAICAYGAQEAgIBAQCAgEBAICtSBw8cUX6yFDhuhRRx3VnHlfS0GBaECg3xBgZxhppJHYIVoH70Mn6beWDPzWggC/HNHOYa+b8bWUGYgGBPoGAU6rwGzqaMb3TT0CowMXgeG6WbXFFlvMWbwv3pk5RAYEakSgqx1kgw02UFhzxKrHe8aHEBAICAABLsiDFCu8CgGBgEBAICCQRuDXX3/lIjyEgEBAIIrAxx9/rJdddlk92mij6THGGENvuOGGmnHRPOE6INC3CFx33XV6iSWWMAevi1aEz+KZ2LHFFlsUplO03JA/INARBKIvePNaXO7PP/+sRxxxxFjnwMN6nHHGCR1EjGLI2AsIDKqDiUGDBqnhhx8+RdoVl8pUIOLtt9/W3333nfr999/VcMMVk1iPPPLIapRRRlFQSqopp5yyUaBYxQHg6aefVr/88osinW4FrO/UJJNMouaee+4Y/z/88IN+6qmn1F9//WXE6FrXOy41Gg3122+/qfHHH1/NN998MV6qYvPtt9/qzz77TL366qvqzTffVF9//bX66aef2AamfsR/9NFHVxh82Y5qlllmUZNPPnnhNi3MZ9UpFtccKDR27L777qmWwsutr776ar3LLrvooUOH6qOPPlq/9tprqXzRCnzzzTd6hx120BNOOKFGpzMHOqWWHDY/bb7GGmssPXjwYL3qqqvqU045Jbdcy8Mzzzyj0SixuiXr2qn7OeecUycFIQ899JDGS9sx/mxZM888s8agkdl2FsO8891336332WcfjQ5n2kmKJ3mZaqqp9EYbbaSvvPJKjQ7VFn7y+C2czgX51ltvrTGqmBd5zz33TC3Sn3vuOT3//POnGhKjoj7//POdFfviiy/0AgsskHpGCmBWPpa77bbb6vfee89ZtgUBo7PG16cWHrL4c6XNPvvsqQ7y4IMPdoW3GWecsVIH4ZeZ7b7IIou0jX922sMPP1zjq5PZprZte+b8+eefawLqanQbd+qpp2p+YSzT7Bxrrrlm5jP22SrnySabTF911VWtcm359vzCCy/occcdt3Y+JHXgy4TpTYzXxx57LGUlLaFVNc8888yT6qwWs7zzrbfequedd97aMJ1jjjl0GWFTHt+Z6Y8//riZFnGqwukR7zMfiCQeeeSRIjBWWmklfdppp+mjjjpKc7QEiY4cWNPoM844w1mf559/3gocOsJLVp0XWmihVAd59NFHnUKSLDrtSJtrrrkKdxCsIfXOO+/cMRz33ntvZ5ui/u0P7BSg2jqa97kF/fHHH3rxxRdvPRel0WvXl112WQrQ0EGGtXm0vYp2EK41XVPsKM06rrk+5jsI2rmhkhTrlltuiRWQvI8lRm4odaL0qR/CTjvtpF5//XU900wztVU60w91r5PHJ554Qi+99NLq008/rbMYJ20IhRQlrX///TcFPJntWkw2mihujTXWiMUk72OJkRto1htTTz11JKZ3L3/88Ud1zDHHxBikWJNHL4Si4u06eZby8uyzz3It2ZXOYet/+eWXq4MPPtje1nOusga54YYbcqdYVCzuu++++oQTTtCLLrpobn7UspY8Y489dkwETCmWSxFaV/lZdCH3T837u7UGmW666TQlUVlvG3QaetZZZ62lnbJw8qVde+21mfxm1aX2NIqBfYxPO+20miONZYJzxrXWWsub30WHOg8ro2c6r6krceXNi7vwwgtbvEBJqMccc0xDZ4QRRtC+g2VBkVVIokQeqaNhB/TRtfHkGUrCSot0YkQeLc2yZ/LCzprXQVZZZZVS+Nv2oW0fZh96ttlmMx2N14yz6UXPfPb9999vtS2ej4VKa5AYpcTNOeecQ+WbgrZbQaGn1l57bXXmmWfG5iUXXHBBgxIqnNXLL79sKFAruvHGG6sDDzxQQeHTyo8XpvHSSy/pu+66y2iwE8WlbldeeWV1yCGHqD///FOhc5l0TgHokAURs7rkkkuUdM3Eh6GzaZVBbe29996rqMkmvawAvhU1wdCvqI8++igrq0mD2FYBE/XPP/9wjpyZn9rriSaaiNr8Fk6ZDzgSMUip7bbbroWRI4soijhTm40XzsvL6aefrnfddVcRvWgmYrj++uurZZZZRkExasqhFQQtBIgBFMcKaxp1zz33mDYldpKAwUFtv/325FmSfVieKlMnUuFoSzEpLmMHtZvDShl2RZ0Itb/33XeffuWVV5x5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"></image>
+                                            <text id="GRADES" font-family="SFProText-Bold, SF Pro Text" font-size="12"
+                                                font-weight="bold" fill="#000000">
+                                                <tspan x="36" y="57">GRADES</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <p class="page-title"></p>
+    </header>
+
+    <main>
+    </main>
+
+    <footer>
+        <button id="accessibility">
+            <svg width="31px" height="23px" viewBox="0 0 31 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="VET-Copy" transform="translate(-1195.000000, -1188.000000)" fill="#000000" fill-rule="nonzero">
+                        <g id="Group-15" transform="translate(924.000000, 664.000000)">
+                            <g id="noun_1015820_cc-copy" transform="translate(271.000000, 524.000000)">
+                                <path d="M16.953125,11.5 L20.34375,11.5 C20.344288,12.8058726 19.8149494,14.0563606 18.8763132,14.9666129 C17.937677,15.8768652 16.6696743,16.3693679 15.3611458,16.3319328 C12.8030778,16.2343465 10.7523198,14.1871876 10.65625,11.6352941 C10.6196122,10.3305082 11.113714,9.06644065 12.0260947,8.13080158 C12.9384753,7.19516251 14.1915101,6.66755545 15.5,6.66806723 L15.5,10.0504202 C15.5,10.4348726 15.6530967,10.8035789 15.9256105,11.0754279 C16.1981243,11.3472768 16.5677323,11.5 16.953125,11.5 Z M30.8094792,10.9427171 L31,11.5 C28.7008333,19.1408964 22.1004167,23 15.5,23 C9.0965625,23 2.693125,19.3760504 0.196979167,12.047619 L0,11.5 C2.29916667,3.85910364 8.89958333,0 15.5,0 C21.9098958,0 28.3165625,3.62394958 30.8094792,10.9427171 Z M26.8957292,11.522549 C24.6611458,5.89173669 19.6042708,3.86554622 15.5,3.86554622 C11.3376042,3.86554622 6.30010417,5.89173669 4.09458333,11.477451 C6.33885417,17.1082633 11.3957292,19.1344538 15.5,19.1344538 C19.6527083,19.1344538 24.6902083,17.1082633 26.8957292,11.522549 Z"
+                                    id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
+    </footer>
+
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>
